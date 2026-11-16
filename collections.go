@@ -12,6 +12,7 @@ func selectByBudget(durations []int, budget int) (indices []int, remaining int, 
 			return nil, budget, false
 		}
 	}
+	index = make ( []int, 0, len (durations)) 
 	remaining = budget
 	for index, duration := range durations {
 		if duration <= remaining {
