@@ -145,7 +145,6 @@ func main() {
 	budget := 40
 	remaining := budget
 
-	// Явный порядок нужен, потому что map не гарантирует порядок перебора.
 	order := []string{"a", "b", "c", "d"}
 
 	for _, id := range order {
